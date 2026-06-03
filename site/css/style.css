@@ -1,20 +1,62 @@
-/* so pra bincar, podemos usar outro */
-/* Dracula Theme */
+/* Tema padrão (claro) */
 :root {
-    /* Base */
-    --bg: #282A36;
-    --surface: #44475A;
-    --text: #F8F8F2;
-    --muted: #6272A4;
+    /* Backgrounds */
+    --bg-primary: #d7e0d2;
+    --bg-secondary: #eef3eb;
+    --bg-card: #ffffff;
 
-    /* Destaques */
-    --primary: #BD93F9;
-    --secondary: #FF79C6;
-    --success: #50FA7B;
-    --warning: #FFB86C;
-    --danger: #FF5555;
-    --info: #8BE9FD;
-    --accent: #F1FA8C;
+    /* Textos */
+    --text-primary: #1c1c1c;
+    --text-secondary: #4b4b4b;
+    --text-muted: #707070;
+
+    /* Marca */
+    --primary: #00a83a;
+    --primary-hover: #008c30;
+    --primary-light: #7ddf9f;
+
+    /* Componentes */
+    --border: #d4d4d4;
+    --shadow: rgba(0, 0, 0, 0.08);
+
+    /* Status */
+    --success: #00a83a;
+    --warning: #f4b400;
+    --danger: #e53935;
+
+    /* Extras */
+    --link: var(--primary);
+    --focus: #4fd87f;
+}
+
+.darkTheme {
+    /* Backgrounds */
+    --bg-primary: #121814;
+    --bg-secondary: #1b241e;
+    --bg-card: #222d25;
+
+    /* Textos */
+    --text-primary: #f4f4f4;
+    --text-secondary: #c8d0ca;
+    --text-muted: #8e9991;
+
+    /* Marca */
+    --primary: #00c853;
+    --primary-hover: #00e062;
+    --primary-light: #59ff9a;
+
+    /* Componentes */
+    --border: #334038;
+    --shadow: rgba(0, 0, 0, 0.35);
+
+    /* Status */
+    --success: #00c853;
+    --warning: #ffc107;
+    --danger: #ff5252;
+
+    /* Extras */
+    --link: #59ff9a;
+    --focus: #00e062;
 }
 
 * {
@@ -22,16 +64,10 @@
 }
 
 html {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     font-size: 16px;
     size: 16px;
-}
-
-.lightTheme {
-    background-color: white;
-    color: black;
-    --primary: #44475A;
 }
 
 body {
@@ -87,7 +123,7 @@ form * {
 
 nav a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--text-secondary);
 }
 
 nav ul {

@@ -26,10 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // Verifica se o tema atual e faz as alteracoes
     if (tema === 'light') {
         SetImgLightTheme();
-        html.classList.add('lightTheme');
+        html.classList.add('darkTheme');
     } else {
         SetImgDarkTheme();
-        html.classList.remove('lightTheme');
+        html.classList.remove('darkTheme');
     }
 
 })
@@ -48,7 +48,7 @@ function SetImgLightTheme() {
 
 function TrocarTema() {
 
-    html.classList.toggle('lightTheme');
+    html.classList.toggle('darkTheme');
 
     /* verifica se a tag HTML tem a classe lightTheme 
     faz a alteração na página para corresponder ao tema trocado
