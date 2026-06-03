@@ -1,0 +1,96 @@
+/* so pra bincar, podemos usar outro */
+/* Dracula Theme */
+:root {
+    /* Base */
+    --bg: #282A36;
+    --surface: #44475A;
+    --text: #F8F8F2;
+    --muted: #6272A4;
+
+    /* Destaques */
+    --primary: #BD93F9;
+    --secondary: #FF79C6;
+    --success: #50FA7B;
+    --warning: #FFB86C;
+    --danger: #FF5555;
+    --info: #8BE9FD;
+    --accent: #F1FA8C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    size: 16px;
+}
+
+.lightTheme {
+    background-color: white;
+    color: black;
+    --primary: #44475A;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.botoesPersonalizar {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin: 4px;
+
+    font-size: 0px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.botoesPersonalizar > * {
+    border: solid currentColor;
+    color: inherit;
+    border-radius: 8px;
+    margin: 4px;
+    height: 44px;
+    width: 44px;
+    background-color: transparent;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+form * {
+    height: 1.2rem;
+    width: 5rem;
+    font-size: 1rem;
+}
+
+#bttGerarSenha {
+    height: 1.2rem;
+    width: 8rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
