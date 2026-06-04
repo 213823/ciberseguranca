@@ -13,9 +13,9 @@ if (tamanhoFonte == null) {
 // Verifica o title do pagina, "Home" foi colocado no Index
 // Seta o caminho base com referencia na pagina atual
 if (pagina === 'Home') {
-    caminhoBase = './'
+    caminhoBase = './';
 } else {
-    caminhoBase = '../'
+    caminhoBase = '../';
 }
 
 document.documentElement.style.fontSize = tamanhoFonte;
@@ -36,12 +36,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function SetImgDarkTheme() {
     document.getElementById('imgDiminuirFonte').src = caminhoBase + 'assets/text_decrease_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
+    document.getElementById('imgResetarFonte').src = caminhoBase + 'assets/rotate_auto_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgAumentarFonte').src = caminhoBase + 'assets/text_increase_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgTheme').src = caminhoBase + 'assets/light_mode_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg';
 }
 
 function SetImgLightTheme() {
     document.getElementById('imgDiminuirFonte').src = caminhoBase + 'assets/text_decrease_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
+    document.getElementById('imgResetarFonte').src = caminhoBase + 'assets/rotate_auto_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgAumentarFonte').src = caminhoBase + 'assets/text_increase_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgTheme').src = caminhoBase + 'assets/dark_mode_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
 }
@@ -63,18 +65,24 @@ function TrocarTema() {
 
 }
 
+function ResetarFonte() {
+    tamanhoFonte = '16px';
+    document.documentElement.style.fontSize = tamanhoFonte;
+    localStorage.setItem('tamanhoFonte', tamanhoFonte);
+}
+
 function AumentarFonte() {
-    let t = parseFloat(localStorage.getItem('tamanhoFonte'))
-    t += 1
-    tamanhoFonte = t + 'px'
-    document.documentElement.style.fontSize = tamanhoFonte
-    localStorage.setItem('tamanhoFonte', tamanhoFonte)
+    let t = parseFloat(localStorage.getItem('tamanhoFonte'));
+    t += 1;
+    tamanhoFonte = t + 'px';
+    document.documentElement.style.fontSize = tamanhoFonte;
+    localStorage.setItem('tamanhoFonte', tamanhoFonte);
 }
 
 function DiminuirFonte() {
-    let t = parseFloat(localStorage.getItem('tamanhoFonte'))
-    t -= 1
-    tamanhoFonte = t + 'px'
-    document.documentElement.style.fontSize = tamanhoFonte
-    localStorage.setItem('tamanhoFonte', tamanhoFonte)
+    let t = parseFloat(localStorage.getItem('tamanhoFonte'));
+    t -= 1;
+    tamanhoFonte = t + 'px';
+    document.documentElement.style.fontSize = tamanhoFonte;
+    localStorage.setItem('tamanhoFonte', tamanhoFonte);
 }
