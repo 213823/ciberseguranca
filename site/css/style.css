@@ -1,7 +1,7 @@
 /* Tema padrão (claro) */
 :root {
     /* Backgrounds */
-    --bg-primary: #d7e0d2;
+    --bg-primary: #deedd9;
     --bg-secondary: #eef3eb;
     --bg-card: #ffffff;
 
@@ -99,24 +99,27 @@ body {
 }
 
 #imgDiminuirFonte {
-    margin:auto; 
+    margin: auto; 
+    width: 100%;
+    height: 100%;
 }
 
 #imgResetarFonte {
-    margin:auto; 
+    margin:auto;
+    width: 100%;
+    height: 100%;
 }
 
 #imgAumentarFonte {
-    margin:auto; 
+    margin:auto;
+    width: 100%;
+    height: 100%;
 }
 
 #imgTheme {
-    margin:auto; 
-}
-
-img {
-    height: 100%;
+    margin:auto;
     width: 100%;
+    height: 100%;
 }
 
 form * {
@@ -174,5 +177,5 @@ main {
 
 .Titulo1 {
     color: var(--primary-dark);
-    font-size: 75px;
+    font-size: 5rem;
 }
