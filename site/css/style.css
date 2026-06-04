@@ -196,10 +196,6 @@ hr {
     border-top: solid 1px hsla(0, 0%, 0%, 0.100);
 }
 
-.referencias > * {
-    border: none;
-}
-
 footer div a {
     border: solid hsla(0, 0%, 0%, 0.100) 1px;
     padding: 40px;
