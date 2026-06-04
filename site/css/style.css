@@ -178,4 +178,31 @@ main {
 .Titulo1 {
     color: var(--primary-dark);
     font-size: 5rem;
+    margin-block: 1.25rem;
+}
+
+.Titulo2 {
+    color: var(--primary);
+}
+
+hr {
+    margin-top: 0;
+}
+
+.back {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+}
+
+@media screen and (max-width: 700px) {
+  .navbar, .botoesPersonalizar {
+    flex-direction: column;
+  }
 }
