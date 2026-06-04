@@ -166,3 +166,13 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
+main {
+    text-align: center;
+
+}
+
+.Titulo1 {
+    color: var(--primary-dark);
+    font-size: 75px;
+}
