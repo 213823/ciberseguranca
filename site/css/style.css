@@ -83,15 +83,18 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    max-width: 100%;
 }
 
 .botoesPersonalizar > * {
     border: solid currentColor;
     color: inherit;
-    margin: 0.25rem;
-    border-radius: 0.5rem;
+    margin: 4px;
+    border-radius: 8px;
     height: 3rem;
+    min-height: 44px;
     width: 3rem;
+    min-width: 44px;
     background-color: transparent;
 }
 
