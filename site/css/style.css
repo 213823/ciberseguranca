@@ -197,11 +197,11 @@ hr {
     display:flex;
     justify-content: space-evenly;
     margin: 4px;
-    border-top: solid 1px hsla(0, 0%, 0%, 0.100);
+    border-top: solid 1px rgb(from var(--text-primary) r g b / 10%);
 }
 
 footer div a {
-    border: solid hsla(0, 0%, 0%, 0.100) 1px;
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
     padding: 40px;
     margin-top: 10px;
     color: var(--link);
@@ -220,7 +220,7 @@ span {
 span button {
     padding: 0px;
     background-color: var(--bg-primary);
-    border: solid hsla(0, 0%, 0%, 0.100) 1px;
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
 }
 
 span button a {
