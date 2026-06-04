@@ -189,15 +189,6 @@ hr {
     margin-top: 0;
 }
 
-.back {
-    position: fixed;
-    right: 20px;
-    bottom: 10px;
-    width: 44px;
-    align-items: center;
-    justify-content: center;
-}
-
 .referencias {
     display:flex;
     justify-content: space-evenly;
@@ -209,6 +200,36 @@ footer div a {
     border: solid hsla(0, 0%, 0%, 0.100) 1px;
     padding: 40px;
     margin-top: 10px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+span {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;   
+    align-items: center;
+    justify-content: center;
+}
+
+span button {
+    padding: 0px;
+    background-color: var(--bg-primary);
+    border: solid hsla(0, 0%, 0%, 0.100) 1px;
+}
+
+span button a {
+    padding: 4px 20px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+span button a:hover {
+    color: var(--primary-hover);
+}
+
+footer div a:hover{
+    color: var(--primary-hover);
 }
 
 @media screen and (max-width: 700px) {
