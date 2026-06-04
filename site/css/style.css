@@ -68,6 +68,11 @@ html {
     color: var(--text-primary);
     font-size: 16px;
     size: 16px;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 body {
@@ -123,7 +128,11 @@ form * {
 
 nav a {
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--primary);
+}
+
+nav a:hover {
+    color: var(--danger);
 }
 
 nav ul {
