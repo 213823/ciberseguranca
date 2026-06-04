@@ -41,14 +41,44 @@
     </nav>
 
     <main>
-        <form>
-            <label for="nrCaracteres">Número de Caracteres da Senha:</label>
-            <input type="number" name="nrCaracteres" id="nrCaracteres" min="8" max="100" required>
-        </form>
-        
-        <button id="bttGerarSenha" onclick="SetSenha()">Gerar Senha</button>
 
-        <p id="senhaRetorno"></p>
+        <section>
+            <h2>Gerador de Senhas Seguras</h2>
+
+            <p>
+                Criar senhas fortes manualmente pode ser difícil. Para facilitar esse
+                processo, utilize o gerador de senhas para criar combinações aleatórias
+                com letras maiúsculas, letras minúsculas, números e caracteres especiais.
+            </p>
+
+            <p>
+                Informe o comprimento desejado e gere uma senha exclusiva para proteger
+                suas contas. Quanto maior o tamanho da senha, maior tende a ser sua
+                resistência contra tentativas de descoberta.
+            </p>
+
+            <h3>Como Utilizar</h3>
+
+            <ol>
+                <li>Informe a quantidade de caracteres desejada.</li>
+                <li>Clique em "Gerar Senha".</li>
+                <li>Copie a senha gerada.</li>
+                <li>Utilize a senha em uma única conta.</li>
+                <li>Armazene-a em um local seguro ou em um gerenciador de senhas.</li>
+            </ol>
+        </section>
+
+        <section>
+            <form>
+                <label for="nrCaracteres">Número de Caracteres da Senha:</label>
+                <input type="number" name="nrCaracteres" id="nrCaracteres" min="8" max="100" required>
+            </form>
+            
+            <button id="bttGerarSenha" onclick="SetSenha()">Gerar Senha</button>
+
+            <p id="senhaRetorno"></p>
+        </section>
+
     </main>
 
     <script src="../js/Personalizar.js"></script>
