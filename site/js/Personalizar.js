@@ -1,7 +1,7 @@
 let tamanhoFonte = localStorage.getItem('tamanhoFonte');
 let tema = localStorage.getItem('tema');
 let pagina = document.getElementsByTagName('title').item(0).innerText;
-let caminhoBase = '';
+let caminhoBase = './';
 const html = document.getElementById('html');
 
 // Se nao tiver tamanho salvo seta tamanho para o valor carregado no html, que vem do css
@@ -10,6 +10,7 @@ if (tamanhoFonte == null) {
     localStorage.setItem('tamanhoFonte', tamanhoFonte);
 }
 
+/*
 // Verifica o title do pagina, "Home" foi colocado no Index
 // Seta o caminho base com referencia na pagina atual
 if (pagina === 'Home') {
@@ -17,6 +18,7 @@ if (pagina === 'Home') {
 } else {
     caminhoBase = '../';
 }
+*/
 
 document.documentElement.style.fontSize = tamanhoFonte;
 
