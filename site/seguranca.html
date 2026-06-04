@@ -43,17 +43,17 @@
     <main>
 
         <section>
-            <h2>Gerador de Senhas Seguras</h2>
+            <h1 class="Titulo1">Gerador de Senhas Seguras</h1>
 
             <p>
                 Criar senhas fortes manualmente pode ser difícil. Para facilitar esse
-                processo, utilize o gerador de senhas para criar combinações aleatórias
+                processo, utilize o gerador de <br> senhas para criar combinações aleatórias
                 com letras maiúsculas, letras minúsculas, números e caracteres especiais.
             </p>
 
             <p>
                 Informe o comprimento desejado e gere uma senha exclusiva para proteger
-                suas contas. Quanto maior o tamanho da senha, maior tende a ser sua
+                suas contas. Quanto maior o <br> tamanho da senha, maior tende a ser sua
                 resistência contra tentativas de descoberta.
             </p>
 
@@ -61,7 +61,7 @@
                 <img id="imgSenha" src="./assets/senha.png" alt="imagem senha">
             </figure>
 
-            <h3>Como Utilizar</h3>
+            <h2 class="Titulo2" style="margin-bottom:0;">Como Utilizar</h2>
 
             <ol id="instrucoesSenha">
                 <li>Informe a quantidade de caracteres desejada.</li>
@@ -71,11 +71,10 @@
                 <li>Armazene-a em um local seguro ou em um gerenciador de senhas.</li>
             </ol>
         </section>
-
         <section>
             <form>
                 <label for="nrCaracteres">Número de Caracteres da Senha:</label>
-                <input type="number" name="nrCaracteres" id="nrCaracteres" min="8" max="100" required>
+                <input placeholder="Mín. 8" type="number" name="nrCaracteres" id="nrCaracteres" min="8" max="100" required>
             </form>
             
             <button id="bttGerarSenha" onclick="SetSenha()">Gerar Senha</button>

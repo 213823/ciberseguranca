@@ -265,9 +265,24 @@ span button a:hover {
     color: var(--primary-hover);
 }
 
+#bttEnviarForm {
+    background-color: var(--bg-primary);
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+#bttEnviarForm:hover {
+    color: var(--primary-hover);
+}
+
 footer div a:hover{
     color: var(--primary-hover);
 }   
+
+#instrucoesSenha {
+    line-height: 2rem;
+}
 
 #mainInfo {
     display: flex;
@@ -295,8 +310,21 @@ footer div a:hover{
 
 #infoEduardo {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 40%;
+    flex-direction: column;
+}
+
+#infoEduardo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#imgEduardo{
+    border-radius: 50%;
+    height: 20rem;
+    border: var(--success) solid 0.1rem;
 }
 
 #input * {
