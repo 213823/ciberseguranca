@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- fonte do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body id="topo">
+    
+    <nav>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./content1.html">Proteção</a></li>
+            <li><a href="./content2.html">Cuidados</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./seguranca.html">Segurança</a></li>
+            <li class="listItem">Contato</li>
+        </ul>
+        
+        <div class="botoesPersonalizar">
+            <button type="button" onclick="DiminuirFonte()">
+                <img id="imgDiminuirFonte" alt="icone botao aumentar fonte">
+            </button>
+            <button type="button" onclick="ResetarFonte()">
+                <img id="imgResetarFonte" alt="icone botao resetar fonte">
+            </button>
+            <button type="button" onclick="AumentarFonte()">
+                <img id="imgAumentarFonte" alt="icone botao diminuir fonte">
+            </button>
+            <button type="button" onclick="TrocarTema()">
+                <img id="imgTheme" alt="icone botao troca tema">
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2 class="Titulo2">Entre em Contato Conosco!</h2>
+            <p>Caso tenha alguma dúvida sobre o conteúdo ou sugestão para o site, por favor entre em contato!</p>
+            <p>Preencha o Formulário abaixo que receberemos sua mensagem, retornaremos assim que possivel.</p>
+        </section>
+
+        <section>
+            <form id="input">
+                <input type="text" name="inputNome" id="inputNome" placeholder="Nome Completo"> <br>
+                <input type="email" name="inputEmail" id="inputEmail" placeholder="Email de Contato"> <br>
+                <textarea name="mensagem" id="inputText"></textarea>
+            </form>
+            <br>
+            <button id="bttEnviarForm">Enviar</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="referencias">
+            <a href="https://www.cert.br" target="_blank">cert.br</a>
+            <a href="https://www.nic.br" target="_blank">nic.br</a>
+            <a href="https://www.cgi.br" target="_blank">cgi.br</a>
+        </div>
+    </footer>
+
+    <span>
+        <button><a href="#topo">Voltar</a></button>
+    </span>
+
+    <script src="./js/Personalizar.js"></script>
+    <script src="./js/EnviarForm.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- fonte do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        
+    <nav>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./content1.html">Proteção</a></li>
+            <li><a href="./content2.html">Cuidados</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li class="listItem">Segurança</li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+
+        <div class="botoesPersonalizar">
+            <button type="button" onclick="DiminuirFonte()">
+                <img id="imgDiminuirFonte" alt="icone botao aumentar fonte">
+            </button>
+            <button type="button" onclick="ResetarFonte()">
+                <img id="imgResetarFonte" alt="icone botao resetar fonte">
+            </button>
+            <button type="button" onclick="AumentarFonte()">
+                <img id="imgAumentarFonte" alt="icone botao diminuir fonte">
+            </button>
+            <button type="button" onclick="TrocarTema()">
+                <img id="imgTheme" alt="icone botao troca tema">
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Gerador de Senhas Seguras</h2>
+
+            <p>
+                Criar senhas fortes manualmente pode ser difícil. Para facilitar esse
+                processo, utilize o gerador de senhas para criar combinações aleatórias
+                com letras maiúsculas, letras minúsculas, números e caracteres especiais.
+            </p>
+
+            <p>
+                Informe o comprimento desejado e gere uma senha exclusiva para proteger
+                suas contas. Quanto maior o tamanho da senha, maior tende a ser sua
+                resistência contra tentativas de descoberta.
+            </p>
+
+            <figure>
+                <img id="imgSenha" src="./assets/senha.png" alt="imagem senha">
+            </figure>
+
+            <h3>Como Utilizar</h3>
+
+            <ol id="instrucoesSenha">
+                <li>Informe a quantidade de caracteres desejada.</li>
+                <li>Clique em "Gerar Senha".</li>
+                <li>Copie a senha gerada.</li>
+                <li>Utilize a senha em uma única conta.</li>
+                <li>Armazene-a em um local seguro ou em um gerenciador de senhas.</li>
+            </ol>
+        </section>
+
+        <section>
+            <form>
+                <label for="nrCaracteres">Número de Caracteres da Senha:</label>
+                <input type="number" name="nrCaracteres" id="nrCaracteres" min="8" max="100" required>
+            </form>
+            
+            <button id="bttGerarSenha" onclick="SetSenha()">Gerar Senha</button>
+
+            <p id="senhaRetorno"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="referencias">
+            <a href="https://www.cert.br" target="_blank">cert.br</a>
+            <a href="https://www.nic.br" target="_blank">nic.br</a>
+            <a href="https://www.cgi.br" target="_blank">cgi.br</a>
+        </div>
+    </footer>
+
+    <script src="./js/Personalizar.js"></script>
+    <script src="./js/geradorSenhas.js"></script>
+
+</body>
+</html>
