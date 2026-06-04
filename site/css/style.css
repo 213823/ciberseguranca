@@ -141,10 +141,6 @@ nav {
     background-color: var(--bg-secondary);
 }
 
-nav * {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-}
 
 nav a {
     text-decoration: none;
@@ -152,9 +148,10 @@ nav a {
     padding: 20px 20px;
 }
 
-nav li {
+.listItem {
     text-decoration: none;
-    color: var(--link);
+    color: var(--text-muted);
+    padding: 0px 20px;
 }
 
 nav a:hover {
