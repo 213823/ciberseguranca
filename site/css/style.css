@@ -85,9 +85,6 @@ body {
 }
 
 .botoesPersonalizar {
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
     margin: 4px;
 
     font-size: 0px;
@@ -126,6 +123,20 @@ form * {
     align-items: center;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+nav * {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
 nav a {
     text-decoration: none;
     color: var(--link);
@@ -136,6 +147,8 @@ nav a:hover {
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     padding: 0;
 }
