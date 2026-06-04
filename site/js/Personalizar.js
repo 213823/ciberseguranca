@@ -26,10 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // Verifica se o tema atual e faz as alteracoes
     if (tema === 'light') {
         SetImgLightTheme();
-        html.classList.add('darkTheme');
+        html.classList.remove('darkTheme');
     } else {
         SetImgDarkTheme();
-        html.classList.remove('darkTheme');
+        html.classList.add('darkTheme');
     }
 
 })
@@ -53,12 +53,12 @@ function TrocarTema() {
     /* verifica se a tag HTML tem a classe lightTheme 
     faz a alteração na página para corresponder ao tema trocado
     adiciona ao localStorage o tema atual */
-    if (html.classList.contains('lightTheme')) {
-        SetImgLightTheme();
-        localStorage.setItem('tema', 'light');
-    } else {
+    if (html.classList.contains('darkTheme')) {
         SetImgDarkTheme();
         localStorage.setItem('tema', 'dark');
+    } else {
+        SetImgLightTheme();
+        localStorage.setItem('tema', 'light');
     }
 
 }
