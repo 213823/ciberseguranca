@@ -12,6 +12,7 @@
 
     /* Marca */
     --primary: #00a83a;
+    --primary-dark: #028530;  
     --primary-hover: #008c30;
     --primary-light: #7ddf9f;
 
@@ -84,23 +85,30 @@ body {
     width: 100vw;
 }
 
-.botoesPersonalizar {
-    margin: 4px;
-
-    font-size: 0px;
-
-    align-items: center;
-    justify-content: center;
-}
-
 .botoesPersonalizar > * {
     border: solid currentColor;
     color: inherit;
-    border-radius: 8px;
     margin: 4px;
+    border-radius: 8px;
     height: 44px;
     width: 44px;
     background-color: transparent;
+}
+
+#imgDiminuirFonte {
+    margin:auto; 
+}
+
+#imgResetarFonte {
+    margin:auto; 
+}
+
+#imgAumentarFonte {
+    margin:auto; 
+}
+
+#imgTheme {
+    margin:auto; 
 }
 
 img {
@@ -130,6 +138,7 @@ nav {
     position: sticky;
     top: 0px;
     left: 0px;
+    background-color: var(--bg-secondary);
 }
 
 nav * {
@@ -138,6 +147,12 @@ nav * {
 }
 
 nav a {
+    text-decoration: none;
+    color: var(--link);
+    padding: 20px 20px;
+}
+
+nav li {
     text-decoration: none;
     color: var(--link);
 }
