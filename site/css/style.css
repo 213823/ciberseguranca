@@ -242,6 +242,7 @@ span {
     font-size: 3rem;
     height: auto;
     width: auto;
+    margin-bottom: 2rem;
 }
 
 #bttGerarSenha:hover {
@@ -266,7 +267,7 @@ span button a:hover {
 
 footer div a:hover{
     color: var(--primary-hover);
-}
+}   
 
 @media screen and (max-width: 700px) {
   .navbar, .botoesPersonalizar {
