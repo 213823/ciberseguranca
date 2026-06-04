@@ -82,12 +82,12 @@ body {
 
     margin: 0;
     min-height: 100vh;
-    width: 100vw;
     max-width: 100%;
 }
 
 main {
     flex: 1;
+    text-align: center;
 }
 
 .botoesPersonalizar > * {
@@ -132,13 +132,35 @@ form * {
     font-size: 1rem;
 }
 
+#instrucoesSenha {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
 #bttGerarSenha {
     height: 1.2rem;
     width: 8rem;
     font-size: 1rem;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+}
+
+#senhaRetorno {
+    font-size: 3rem;
+    color: var(--warning);
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+    width: 80%;
+    margin: 0 auto;
 }
 
 nav {
@@ -172,11 +194,6 @@ nav ul {
     flex-direction: row;
     list-style: none;
     padding: 0;
-}
-
-main {
-    text-align: center;
-
 }
 
 .Titulo1 {
@@ -215,6 +232,20 @@ span {
     bottom: 10px;   
     align-items: center;
     justify-content: center;
+}
+
+#bttGerarSenha {
+    background-color: var(--bg-primary);
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 3rem;
+    height: auto;
+    width: auto;
+}
+
+#bttGerarSenha:hover {
+    color: var(--primary-hover);
 }
 
 span button {
