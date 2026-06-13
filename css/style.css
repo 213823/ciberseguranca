@@ -1,0 +1,353 @@
+/* Tema padrão (claro) */
+:root {
+    /* Backgrounds */
+    --bg-primary: #deedd9;
+    --bg-secondary: #eef3eb;
+    --bg-card: #ffffff;
+
+    /* Textos */
+    --text-primary: #1c1c1c;
+    --text-secondary: #4b4b4b;
+    --text-muted: #707070;
+
+    /* Marca */
+    --primary: #00a83a;
+    --primary-dark: #028530;  
+    --primary-hover: #008c30;
+    --primary-light: #7ddf9f;
+
+    /* Componentes */
+    --border: #d4d4d4;
+    --shadow: rgba(0, 0, 0, 0.08);
+
+    /* Status */
+    --success: #00a83a;
+    --warning: #f4b400;
+    --danger: #e53935;
+
+    /* Extras */
+    --link: var(--primary);
+    --focus: #4fd87f;
+}
+
+.darkTheme {
+    /* Backgrounds */
+    --bg-primary: #121814;
+    --bg-secondary: #1b241e;
+    --bg-card: #222d25;
+
+    /* Textos */
+    --text-primary: #f4f4f4;
+    --text-secondary: #c8d0ca;
+    --text-muted: #8e9991;
+
+    /* Marca */
+    --primary: #00c853;
+    --primary-hover: #00e062;
+    --primary-light: #59ff9a;
+
+    /* Componentes */
+    --border: #334038;
+    --shadow: rgba(0, 0, 0, 0.35);
+
+    /* Status */
+    --success: #00c853;
+    --warning: #ffc107;
+    --danger: #ff5252;
+
+    /* Extras */
+    --link: #59ff9a;
+    --focus: #00e062;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+    size: 16px;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+}
+
+.botoesPersonalizar > * {
+    border: solid currentColor;
+    color: inherit;
+    margin: 4px;
+    border-radius: 8px;
+    height: 3rem;
+    min-height: 44px;
+    width: 3rem;
+    min-width: 44px;
+    background-color: transparent;
+}
+
+#imgDiminuirFonte {
+    margin: auto; 
+    width: 100%;
+    height: 100%;
+}
+
+#imgResetarFonte {
+    margin:auto;
+    width: 100%;
+    height: 100%;
+}
+
+#imgAumentarFonte {
+    margin:auto;
+    width: 100%;
+    height: 100%;
+}
+
+#imgTheme {
+    margin:auto;
+    width: 100%;
+    height: 100%;
+}
+
+form * {
+    height: 1.2rem;
+    width: 5rem;
+    font-size: 1rem;
+}
+
+#instrucoesSenha {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#bttGerarSenha {
+    height: 1.2rem;
+    width: 8rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#senhaRetorno {
+    font-size: 3rem;
+    color: var(--warning);
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: var(--bg-secondary);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link);
+    padding: 1rem 1rem;
+}
+
+.listItem {
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 0px 1rem;
+}
+
+nav a:hover {
+    color: var(--primary-hover);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.Titulo1 {
+    color: var(--primary-dark);
+    font-size: 5rem;
+    margin-block: 1.25rem;
+}
+
+.Titulo2 {
+    color: var(--primary);
+}
+
+hr {
+    margin-top: 0;
+}
+
+.referencias {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 4px;
+    border-top: solid 1px rgb(from var(--text-primary) r g b / 10%);
+}
+
+footer div a {
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+    padding: 40px;
+    margin-top: 10px;
+    color: var(--link);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+span {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;   
+    align-items: center;
+    justify-content: center;
+}
+
+#bttGerarSenha {
+    background-color: var(--bg-primary);
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 3rem;
+    height: auto;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+#bttGerarSenha:hover {
+    color: var(--primary-hover);
+}
+
+span button {
+    padding: 0px;
+    background-color: var(--bg-primary);
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+}
+
+span button a {
+    padding: 4px 20px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+span button a:hover {
+    color: var(--primary-hover);
+}
+
+#bttEnviarForm {
+    background-color: var(--bg-primary);
+    border: solid rgb(from var(--text-primary) r g b / 10%) 1px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+#bttEnviarForm:hover {
+    color: var(--primary-hover);
+}
+
+footer div a:hover{
+    color: var(--primary-hover);
+}   
+
+#instrucoesSenha {
+    line-height: 2rem;
+}
+
+#mainInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#infoGustavo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+}
+
+#infoGustavo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#imgGustavo{
+    border-radius: 50%;
+    height: 20rem;
+    border: var(--danger) solid 0.1rem;
+}
+
+#infoEduardo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+}
+
+#infoEduardo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#imgEduardo{
+    border-radius: 50%;
+    height: 20rem;
+    border: var(--success) solid 0.1rem;
+}
+
+#input * {
+    width: 20rem;
+    height: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+#inputText {
+    height: 20rem;
+    width: 20rem;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: left;
+    vertical-align: top;
+
+    resize: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar, .botoesPersonalizar {
+    flex-direction: column;
+  }
+}
